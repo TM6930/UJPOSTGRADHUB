@@ -1,0 +1,23 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+}
+.header-landing {
+    background: linear-gradient(135deg, #FFA500, #FF6347);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.header-landing h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header-landing p {
+    font-size: 1.2rem;
+}

@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(45deg, #FF5733, #FFC300);
+    color: black;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo-container img {
+    width: 90px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 5;
+    padding: 0;
+    justify-content: center;
+
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f1f1f1;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  
+}
+
+.section-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* General styling */
+#tools {
+    padding: 20px;
+    background-color: #FFA500;
+}
+
+#tools h2 {
+    color: #000; /* Make the title black */
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tools-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.tool-option {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #000; /* Make the text black */
+    text-decoration: none;
+    background-color: WHITE ; /* Green background */
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    opacity: 10; /* Initially hide the options */
+    transform: translateX(-10px); /* Start off above the original position */
+  
+}
+
+/* Add hover effect */
+.tool-option:hover {
+    background-color: #FFDB80 ;
+    transform: translateY(0); /* Slide back into place */
+    opacity: 1; /* Fade in */
+}
+
+/* Add animation for the sliding effect */
+.tools-list li {
+    animation: slideIn 0.5s forwards;
+    animation-delay: calc(0.3s * var(--i)); /* Delay each option for a more staggered effect */
+}
+
+/* Animation for sliding effect */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add some delay for each list item */
+.tools-list li:nth-child(1) {
+    --i: 1;
+}
+
+.tools-list li:nth-child(2) {
+    --i: 2;
+}
+
+.tools-list li:nth-child(3) {
+    --i: 3;
+}
+
+.tools-list li:nth-child(4) {
+    --i: 4;
+}
+
+button {
+    background: #FF5733;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #FFC300;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #343a40;
+    color: white;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}

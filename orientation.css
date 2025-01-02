@@ -1,0 +1,60 @@
+/* Landing Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header-landing {
+    background: linear-gradient(135deg, #FFA500, #FF6347);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.header-landing h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header-landing p {
+    font-size: 1.2rem;
+}
+
+.content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.feature {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    color: #FF6347;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
